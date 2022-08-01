@@ -39,7 +39,9 @@ const maxProfit = (list) => {
   return temp <= 0 ? -1 : temp;
 }
 
-//this is an attempt at recursion, I couldn't come up with a way that wouldn't use a global variable, 
+//this is an attempt at recursion, I couldn't come up with a way that wouldn't use a global variable,
+//this caused problems when trying to assert the -1 case, as the global variable kept track of the previous value,
+//I also didn't have the while loop included in the function above, and the fuction above was renamed to compare() 
 // let profit = []; //problem here with a global variable!  
 /* const maxProfit = (prices) => {
     if (prices.length !== 1) {
